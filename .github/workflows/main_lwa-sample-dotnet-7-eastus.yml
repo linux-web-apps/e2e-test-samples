@@ -13,7 +13,9 @@ jobs:
 
     steps:
       # Checkout the repo
-      - uses: actions/checkout@dotnet-7.0-eastus
+      - uses: actions/checkout@main
+        with:
+          ref: 'dotnet-7.0-eastus'
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDS_DOTNET_7_0_EASTUS }}
