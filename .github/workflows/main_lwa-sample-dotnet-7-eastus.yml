@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@dotnet-7.0-eastus
       - uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDS_DOTNET_7_0_EASTUS }}
 
       
       # Setup .NET Core SDK
