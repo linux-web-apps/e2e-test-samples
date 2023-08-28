@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp\\sampleApp.csproj": {}
+    "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp\\sampleApp.csproj": {
+    "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp\\sampleApp.csproj",
+        "projectUniqueName": "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp.csproj",
         "projectName": "sampleApp",
-        "projectPath": "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp\\sampleApp.csproj",
+        "projectPath": "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp.csproj",
         "packagesPath": "C:\\Users\\sgollapudi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\sampleApp\\obj\\",
+        "outputPath": "C:\\Users\\sgollapudi\\Documents\\garp\\e2e-test-samples\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sgollapudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
