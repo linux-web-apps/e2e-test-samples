@@ -2,7 +2,7 @@ name: Build and deploy Dotnet app to Azure Web App - lwa-sample-dotnet-7-eastus
 
 on: 
   schedule:
-    - cron: '35 7 * * *' # runs at 7:35 UTC every day
+    - cron: '5 8 * * *' # every day at 8:05 UTC
 
 env:
   AZURE_WEBAPP_NAME: lwa-sample-dotnet-7-eastus   # set this to your application's name
