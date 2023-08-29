@@ -1,4 +1,4 @@
-name: Build and deploy Dotnet app to Azure Web App - lwa-sample-dotnet-7-eastus2euap
+name: Daily run [EastUS2EUAP] - lwa-sample-dotnet-7-eastus2euap
 
 on: 
   schedule:
