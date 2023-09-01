@@ -1,4 +1,4 @@
-name: Daily run [EastUS2EUAP] - lwa-sample-dotnet-7-francecentral
+name: Daily run [FranceCentral] - lwa-sample-dotnet-7-francecentral
 
 on: 
   schedule:

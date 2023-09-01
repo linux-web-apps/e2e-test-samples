@@ -6,9 +6,21 @@ Each branch contains a specific framework and version.
 For each framework and version we have that app deployed in multiple regions. There will be a branch like 
 'node-16' which will be deployed in many regions. There are multiple workflows running for the same app in multiple regions.
 
+Sample dotnet7 apps and the corresponding ASPs according to stages
+
 EastUS2EUAP(stage) - stage 0 - lwa-sample-dotnet-7-eastus2euap - e2e-test-apps-eastus2euap (B3: 1)
 France Central - stage 1 - lwa-sample-dotnet-7-francecentral - e2e-test-apps-francecentral (B3: 1)
-West US 2 - stage 2 - 
-East US - stage 3
-Southeast Asia - stage 4
-West Europe - stage 5
+West US 2 - stage 2 - lwa-sample-dotnet-7-westus2 - e2e-test-apps-westus2
+East US - stage 3 - lwa-sample-dotnet-7-eastus - e2e-test-apps-eastus
+Southeast Asia - stage 4 - e2e-test-apps-southeastasia
+West Europe - stage 5 - e2e-test-apps-westeurope
+
+Command used to provision apps in the regions
+`az deployment group create --resource-group "e2e-test-apps" --template-file .\main.bicep --parameters .\deployParams.bicepparam`
+
+Command used to provision app service plans
+`az deployment group create --resource-group "e2e-test-apps" --template-file .\deployASP.bicep --parameters .\deployASPparams.bicepparam`
+
+To test a Custom Kudu image,
+update the parameter `customKuduImage` in the file `deployParams.bicepparam`
+uncomment the appsettings in the `deployApp.bicep`
