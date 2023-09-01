@@ -1,7 +1,9 @@
 name: Daily run [Node-EastUS2EUAP] - lwa-sample-node-16-eastus2euap
+# on: 
+#     schedule:
+#       - cron: '20 8 * * *' # every day at 8:20 UTC
 on: 
-    schedule:
-      - cron: '20 8 * * *' # every day at 8:20 UTC
+    push
 
 env:
   AZURE_WEBAPP_NAME: lwa-sample-node-16-eastus2euap   # set this to your application's name
