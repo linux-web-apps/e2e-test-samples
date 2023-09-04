@@ -1,11 +1,9 @@
 name: Daily run [Node-EastUS2EUAP] - lwa-sample-node-16-eastus2euap
-# on: 
-#     schedule:
-#       - cron: '20 8 * * *' # every day at 8:20 UTC
 on: 
-    push
+    schedule:
+      - cron: '20 8 * * *' # every day at 8:20 UTC
 
-env:
+      env:
   AZURE_WEBAPP_NAME: lwa-sample-node-16-eastus2euap   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './mySampleApp'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '16.x'                # set this to the node version to use
