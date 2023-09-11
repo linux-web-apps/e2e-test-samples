@@ -8,7 +8,7 @@ on:
 env:
     AZURE_WEBAPP_NAME: lwa-sample-php-8-0-westus2   # set this to your application's name
     AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-    PHP_VERSION: '8.0'           # set this to the dot net version to use
+    PHP_VERSION: '8.0'           # set this to the php version to use
       
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: php-app
-          path: .
+          path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
   deploy:
     runs-on: ubuntu-latest
