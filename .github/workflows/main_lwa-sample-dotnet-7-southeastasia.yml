@@ -1,11 +1,11 @@
-name: Daily run[.NET7-EastUS] - lwa-sample-dotnet-7-eastus
+name: Daily run[.NET7-southeastasia] - lwa-sample-dotnet-7-southeastasia
 
 on: 
   schedule:
     - cron: '20 8 * * *' # every day at 8:20 UTC
 
 env:
-  AZURE_WEBAPP_NAME: lwa-sample-dotnet-7-eastus   # set this to your application's name
+  AZURE_WEBAPP_NAME: lwa-sample-dotnet-7-southeastasia   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './sampleAppOutput'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '7.0'           # set this to the dot net version to use
 

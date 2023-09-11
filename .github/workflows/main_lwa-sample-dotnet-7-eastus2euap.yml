@@ -1,4 +1,4 @@
-name: Daily run [EastUS2EUAP] - lwa-sample-dotnet-7-eastus2euap
+name: Daily run [.NET7-EastUS2EUAP] - lwa-sample-dotnet-7-eastus2euap
 
 on: 
   schedule:
