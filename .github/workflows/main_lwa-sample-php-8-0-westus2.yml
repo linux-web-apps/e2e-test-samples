@@ -18,10 +18,7 @@ jobs:
       - uses: actions/checkout@main
         with:
           ref: 'php-8.0'
-      - uses: azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDS_E2E_SERVICE_PRINCIPAL }}
-
+      
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -56,6 +53,10 @@ jobs:
         with:
           name: php-app
 
+      - uses: azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDS_E2E_SERVICE_PRINCIPAL }}
+  
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
