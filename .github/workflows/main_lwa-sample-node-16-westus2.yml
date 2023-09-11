@@ -1,4 +1,4 @@
-name: Daily run [Node-westus2] - lwa-sample-node-16-westus2
+name: Daily run [Node16-westus2] - lwa-sample-node-16-westus2
 on: 
     schedule:
       - cron: '20 8 * * *' # every day at 8:20 UTC
