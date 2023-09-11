@@ -1,9 +1,9 @@
 name: Daily run[php-8-0-westus2] - lwa-sample-php-8-0-westus2
 
-on:
-  push:
-    branches:
-      - main
+on: 
+  schedule:
+    - cron: '20 8 * * *' # every day at 8:20 UTC
+
 
 env:
     AZURE_WEBAPP_NAME: lwa-sample-php-8-0-westus2   # set this to your application's name
