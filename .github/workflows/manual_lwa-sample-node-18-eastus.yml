@@ -1,12 +1,12 @@
-name: Manual run [Node16-EastUS] - lwa-sample-node-16-eastus
+name: Manual run [Node18-EastUS] - lwa-sample-node-18-eastus
 on: 
   push:
     branches:
       - main
 env:
-  AZURE_WEBAPP_NAME: lwa-sample-node-16-eastus   # set this to your application's name
+  AZURE_WEBAPP_NAME: lwa-sample-node-18-eastus   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './mySampleApp'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '16.x'                # set this to the node version to use
+  NODE_VERSION: '18.x'                # set this to the node version to use
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
     - name: 'Checkout GitHub Action' 
       uses: actions/checkout@main
       with:
-        ref: 'node-16'
+        ref: 'node-18'
    
     - uses: azure/login@v1
       with:
