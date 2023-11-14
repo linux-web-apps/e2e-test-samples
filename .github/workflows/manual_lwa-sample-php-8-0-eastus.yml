@@ -58,7 +58,7 @@ jobs:
             creds: ${{ secrets.AZURE_CREDS_E2E_SERVICE_PRINCIPAL }}
   
       - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@sgTestingV3
+        uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}

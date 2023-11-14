@@ -27,7 +27,7 @@ resource appService 'Microsoft.Web/sites@2020-06-01' = [for framework in items(f
       // appSettings: [
       //   {
       //     name: 'WEBSITE_PIN_SYSTEM_IMAGES'
-      //     value: customKuduImage
+      //     value: customKuduImage // Ex: kudulite_buster|appsvc/kudulite:buster_20230530.1
       //   }
       // ]
     }
