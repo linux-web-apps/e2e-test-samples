@@ -39,7 +39,7 @@ jobs:
           
       # Deploy to Azure Web apps
       - name: 'Run Azure webapp deploy action using Azure Credentials'
-        uses: azure/webapps-deploy@sgTestingV3
+        uses: azure/webapps-deploy@sgTesting
         with: 
           app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
           package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
